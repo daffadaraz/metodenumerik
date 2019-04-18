@@ -51,6 +51,7 @@ while cekerr > err:
 	cekerr = abs(fx3)
 
 	if cekerr <= err :
+		print("_____________________")
 		print("Akar Persamaan, %.20f"%(x3))
 		print("Atau ~ %.2f"%(x3))
 		break
