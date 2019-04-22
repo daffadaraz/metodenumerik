@@ -1,4 +1,5 @@
 import os
+from clear import clear
 
 check = 1
 cekerr = 1
@@ -13,12 +14,12 @@ def persamaan(x):
 	fx = pow(x,3) + (2 * pow(x,2)) - (4*x) - 4
 	return fx
 
-os.system('clear')
+clear()
 
 print("Metode Bisection")
 print("Persamaan, F(X) = x^3 + 2x^2 - 4x - 4") #jangan lupa ubah ini nya.
 
-#Check apabila Fx1*Fx2 
+#Check apabila Fx1*Fx2
 while check > 0:
 	print("")
 	x1 = float(input("Masukkan X1 : "))
@@ -72,7 +73,7 @@ while cekerr > err:
 ## Metode Bisection yang digunakan
 ## 1. Ambil dua titik sembarang x1  dan  x2
 ## 2. Hitung nilai  f(x1)  dan  f(x2)
-## 3. Tentukan hasil kali tanda bilangan f(x1).f(x2). 
+## 3. Tentukan hasil kali tanda bilangan f(x1).f(x2).
 ##     Bila f(x1).f(x2)  > 0 , ganti x1 dan x2   ,    Bila   f(x1).f(x2) < 0  (berlawanan tanda) ,
 ## 4.  Hitung    x3   =  ( x1 + x2 ) / 2
 ## 5. Hitung nilai  f(x3)
