@@ -1,5 +1,5 @@
 import os
-from clear import clear
+from myfunc import clear
 
 check = 1
 cekerr = 1
