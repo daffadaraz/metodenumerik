@@ -3,14 +3,13 @@ from clear import clear
 
 check = 1
 cekerr = 1
-n = 2
+n = 0
 
 #Set Sendiri taraf error nya
 err = 0
 
 #Persamaan Ubah Sesuai Keinginan
 def persamaan(x):
-	x = float(x)
 	fx = pow(x,3) + (2 * pow(x,2)) - (4*x) - 4
 	return fx
 
@@ -26,6 +25,7 @@ while check > 0:
 	x2 = float(input("Masukkan X2 : "))
 	fx1 = persamaan(x1)
 	fx2 = persamaan(x2)
+	err = float(input("Masukkan Error : "))
 	print("")
 	print("Nilai dari, F(%d) = %8.3f " % (x1,fx1))
 	print("Nilai dari, F(%d) = %8.3f " % (x2,fx2))
@@ -51,12 +51,6 @@ while cekerr > err:
 	fx3 = persamaan(x3)
 	cekerr = abs(fx3)
 
-	if cekerr <= err :
-		print("_____________________")
-		print("Akar Persamaan, %.20f"%(x3))
-		print("Atau ~ %.2f"%(x3))
-		break
-
 	check2 = fx1 * fx3
 	if check2 > 0:
 		x1 = x3
@@ -65,6 +59,12 @@ while cekerr > err:
 
 	#OUTPUT
 	print("%3d|     %.8f      %10.8f      %12.10f" % (n,x3,fx3,abs(fx3)))
+
+	if cekerr <= err :
+		print("_____________________")
+		print("Akar Persamaan, %.20f"%(x3))
+		print("Atau ~ %.2f"%(x3))
+		break
 
 	if n%10 == 0:
 		input("lanjut?")
