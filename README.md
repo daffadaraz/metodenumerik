@@ -7,4 +7,5 @@ Metode Numerik yang saya dapatkan dari kuliah saya.
 
 # Note
 Menggunakan Python 3.7 dan Ubuntu (Sudah di test di windows juga)
+
 Untuk round adalah code yang menggunakan pembulatan pada perhitungan.
