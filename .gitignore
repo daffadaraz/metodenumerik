@@ -1,2 +1,3 @@
 *.pyc
 /Time/__pycache__
+.gitignore
