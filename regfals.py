@@ -54,6 +54,7 @@ def main():
             print("________________")
             print("Akar Persamaan, %.20f"%(x3))
             print("Atau ~ %.4f"%(x3))
+            print("Error, %.20f"%(cekerr))
             break
 
         if fx1 * fx3 > 0:
