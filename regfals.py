@@ -13,10 +13,11 @@ def main():
     clear ()
 
     print("Regula Falsi")
-    print("Persamaan, F(x) = x^3 + 2x^2 - 4x -4")
+    print("Persamaan, F(x) = x^3 + 2x^2 - 4x -4") #Jangan lupa edit
     print("")
     err = float(input("Masukkan Error : "))
-    while check > 0:
+
+    while check > 0: #Menentukan X1 dan X2
     	print("")
     	x1 = float(input("Masukkan X1 : "))
     	x2 = float(input("Masukkan X2 : "))
@@ -34,18 +35,20 @@ def main():
     		print("Syarat belum ok f(%d)*f(%d) > 0 >> %5.2f>0"%(x1,x2,check))
     print()
 
+    #Mempersiapkan output berupa tabel
     print("X1 = %d , X2 = %d , Error = %.2f"% (x1,x2,err))
     print("______________________________________________________")
     print("  n           x              f(x)             error   ")
     print("______________________________________________________")
 
     cekerr = err + 1;
-    while cekerr > err:
+    while cekerr > err: #Iterasi / Pencarian Akar
         n = n + 1
         x3 = ((fx1 * x2) - (fx2 * x1)) / (fx1 - fx2)
         fx3 = persamaan(x3)
         cekerr = abs(fx3)
 
+        #OUTPUT
         print("%3d|     %.8f      %10.8f      %12.10f" % (n,x3,fx3,cekerr))
         if cekerr <= err :
             print("________________")

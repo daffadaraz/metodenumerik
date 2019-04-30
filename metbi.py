@@ -1,15 +1,16 @@
 import os
 from myfunc import clear
 
-check = 1
-n = 0
-
 #Persamaan Ubah Sesuai Keinginan
 def persamaan(x):
 	fx = pow(x,3) + (2 * pow(x,2)) - (4*x) - 4
 	return fx
 
 def main():
+	#var
+	check = 1
+	n = 0
+	
 	clear()
 
 	print("Metode Bisection")
