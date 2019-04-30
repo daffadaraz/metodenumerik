@@ -63,7 +63,7 @@ def main():
 			print("_____________________")
 			print("Akar Persamaan, %.20f"%(x3))
 			print("Atau ~ %.4f"%(x3))
-			print("Error, %.20f"%(cekerr))
+			print("Error, %.4f"%(cekerr))
 			break
 
 		if n%10 == 0:
