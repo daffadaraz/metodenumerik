@@ -53,7 +53,7 @@ def main():
 			x2 = x3
 
 		#OUTPUT
-		print("%3d|     %.8f      %10.8f      %12.10f" % (n,x3,f(x3),cekerr))
+		print("%3d|     %.8f       %10.8f      %12.10f" % (n,x3,f(x3),cekerr))
 
 		if cekerr <= err :
 			print("_____________________")

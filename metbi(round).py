@@ -59,14 +59,14 @@ def main():
 			x2 = x3
 
 		#OUTPUT
-		print("%3d|     %.8f      %10.8f      %12.10f" % (n,x3,fx3,abs(fx3)))
+		print("%3d|     %.8f       %10.8f      %12.10f" % (n,x3,fx3,abs(fx3)))
 
 		if cekerr <= err or cekerr == cektemp :
 			print("_____________________")
 			print("Akar Persamaan, %f"%(round(x3,rou)))
 			print("Error, %.4f"%(round(cekerr,rou)))
 			break
-			
+
 		cektemp = cekerr
 		if n%10 == 0:
 			input("lanjut?")

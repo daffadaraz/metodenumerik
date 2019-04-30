@@ -51,7 +51,7 @@ def main():
         cekerr = abs(fx3)
 
         #OUTPUT
-        print("%3d|     %.8f      %10.8f      %12.10f" % (n,x3,fx3,cekerr))
+        print("%3d|     %.8f       %10.8f      %12.10f" % (n,x3,fx3,cekerr))
         if cekerr <= err or cekerr == cektemp :
             print("________________")
             print("Akar Persamaan, %f"%(round(x3,rou)))
@@ -62,7 +62,7 @@ def main():
             x1 = x3
         else :
             x2 = x3
-            
+
         cektemp = cekerr
         if n%10 == 0:
             input("Lanjut? Tekan enter.")
