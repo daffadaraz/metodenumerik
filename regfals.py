@@ -72,7 +72,7 @@ if __name__ == '__main__':
 # 2. Hitung nilai f(x1)  dan  f(x2)
 # 3. Tentukan hasil kali tanda bilangan  f(x1) . f(x2)
 #    Bila  f(x1).f(x2)  > 0 , ganti titik x1 dan x2 . Bila  f(x1).f(x2)  < 0  ( berlawanan tanda )
-# 4. Hitung nilai  x3  =   x2  -  ( f(2) ( x2 - x1 ) ) / ( f(x2) - f(x1) )
+# 4. Hitung nilai  xx3 = ((fx1 * x2) - (fx2 * x1)) / (fx1 - fx2)
 # 5. Hitung nilai  f(x3)
 #    Bila nilai f(x3) mendekati nol , maka x3 adalah akar persamaan . Selesai . Bila tidak,
 # 6. Tentukan hasil kali tanda bilangan  f(x1).f(x3)
