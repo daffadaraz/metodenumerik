@@ -165,3 +165,16 @@ if __name__ == '__main__':
 ##     Bila tanda bilangan   f(x1).f(x3)   <  0  maka  x2 =  x3  ( nilai x2 menjadi  x3 ).
 ## 7. Kembali ke langkah 4.
 #--------------------------------------------------------------------------------------------------#
+# Metode Regula Falsi yang digunakan
+# 1. Ambil dua titik sembarang  x1  dan   x2
+# 2. Hitung nilai f(x1)  dan  f(x2)
+# 3. Tentukan hasil kali tanda bilangan  f(x1) . f(x2)
+#    Bila  f(x1).f(x2)  > 0 , ganti titik x1 dan x2 . Bila  f(x1).f(x2)  < 0  ( berlawanan tanda )
+# 4. Hitung nilai  x3 = (x1 * f(x2) - x2 * f(x1)) / (f(x2) - f(x1))
+# 5. Hitung nilai  f(x3)
+#    Bila nilai f(x3) mendekati nol , maka x3 adalah akar persamaan . Selesai . Bila tidak,
+# 6. Tentukan hasil kali tanda bilangan  f(x1).f(x3)
+#    Bila tanda bilangan f(x1).f(x3)  >  0 , maka  x1  =  x3  ( nilai x1 menjadi  x3 )
+#    Bila tanda bilangan  f(x1).f(x3)  <  0 , maka  x2  =  x3 ( nilai x2 menjadi  x3 )
+# 7. Kembali ke langkah 4.
+#--------------------------------------------------------------------------------------------------#
