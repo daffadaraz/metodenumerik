@@ -105,7 +105,7 @@ def main():
 			print("Akar Persamaan, %.36f"%(x3))
 			print("Atau ~ %.4f"%(round(x3,4)))
 			print("Error, %.4f"%(round(cekerr,4)))
-			Print()
+			print()
 			print("Note!")
 			print("Saat Melakukan perhitungan pastikan gunakan pembulatan")
 			print("agar mendapatkan jawaban yang sesuai dengan taraf error")
