@@ -36,7 +36,7 @@ def persamaan(pers):
 	n = 1
 	while((pers.find("^")) == 1):
 		n = n + 1
-		per = per.replace("x^%d"%(i),"pow(x,%d)"%(i))
+		pers = pers.replace("x^%d"%(i),"pow(x,%d)"%(i))
 	return pers
 
 #--------------------------------------------------------------------------------------------------#
