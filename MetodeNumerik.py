@@ -36,7 +36,7 @@ def persamaan(pers):
 	n = 1
 	while((pers.find("^")) == 1):
 		n = n + 1
-		pers = pers.replace("x^%d"%(i),"pow(x,%d)"%(i))
+		pers = pers.replace("x^%d"%(n),"pow(x,%d)"%(n))
 	return pers
 
 #--------------------------------------------------------------------------------------------------#
@@ -81,10 +81,9 @@ def main():
 	print("_______________________________________________________")
 
 	#Hanya untuk initialisasi
-	cekerr = err + random.randint(1,10)
-	cektemp = cekerr + random.randint(1,10)
+	cektemp = random.randint(1,100)
 
-	while cekerr > err:
+	while True:
 		#Counter Iterasi
 		n = n + 1
 
@@ -95,17 +94,16 @@ def main():
 			x3 = round(((x1 * f(x2) - x2 * f(x1)) / (f(x2) - f(x1))),rou)
 
 		fx3 = round(f(x3),rou)
-		cekerr = abs(fx3)
 
 		#Output Sesuai bentuk tabel
-		print("%3d|     %.8f       %10.8f      %12.10f" % (n,x3,fx3,cekerr))
+		print("%3d|     %.8f       %10.8f      %12.10f" % (n,x3,fx3,fx3))
 
 		#Print Akar Persamaan
-		if cekerr <= err or cekerr == cektemp :
+		if abs(fx3) <= err or abs(fx3) == cektemp :
 			print("________________")
 			print("Akar Persamaan, %.36f"%(x3))
 			print("Atau ~ %.4f"%(round(x3,4)))
-			print("Error, %.4f"%(round(cekerr,4)))
+			print("Error, %.4f"%(round(fx3,4)))
 			print()
 			print("Note!")
 			print("Saat Melakukan perhitungan pastikan gunakan pembulatan")
@@ -117,7 +115,7 @@ def main():
 		else :
 			x2 = x3
 
-		cektemp = cekerr
+		cektemp = abs(fx3)
 
 		#Agar memudahkan pembacaan iterasi. setiap 10 iterasi di stop.
 		if n%10 == 0:
@@ -142,7 +140,6 @@ if __name__ == '__main__':
 
 		#Pemilihan Metode Numerik
 		pil = method()
-
 		main()
 
 		print()
@@ -150,6 +147,7 @@ if __name__ == '__main__':
 		pil2 = input("Ulang ? (y/n) : ")
 		if pil2 =='y' or pil2 == 'Y':
 			pil3 = input("Ulang dengan Persamaan yang sama ? (y/n) : ")
+			clear()
 
 
 #--------------------------------------------------------------------------------------------------#
