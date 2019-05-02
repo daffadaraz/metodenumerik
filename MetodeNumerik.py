@@ -33,9 +33,10 @@ def f(x):
 #Merubah bentuk persamaan
 #--------------------------------------------------------------------------------------------------#
 def persamaan(pers):
-	pers = pers.replace("x^4","pow(x,4)")
-	pers = pers.replace("x^3","pow(x,3)")
-	pers = pers.replace("x^2","pow(x,2)")
+	n = 1
+	while((pers.find("^")) == 1):
+		n = n + 1
+		per = per.replace("x^%d"%(i),"pow(x,%d)"%(i))
 	return pers
 
 #--------------------------------------------------------------------------------------------------#
