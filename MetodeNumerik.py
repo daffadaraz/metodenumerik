@@ -44,7 +44,6 @@ def persamaan(pers):
 #--------------------------------------------------------------------------------------------------#
 def main():
 	#var
-	check = 1
 	n = 0
 
 	clear ()
@@ -57,7 +56,7 @@ def main():
 	rou = int(input("Pembulatan : "))
 	err = float(input("Masukkan Error : "))
 
-	while check >= 0:
+	while True:
 		print()
 		x1 = float(input("Masukkan X1 : "))
 		x2 = float(input("Masukkan X2 : "))
@@ -70,6 +69,7 @@ def main():
 		check = fx1*fx2
 		if check < 0:
 			print("Syarat sudah ok. f(%d)*f(%d) < 0 || %5.2f < 0"%(x1,x2,check))
+			break
 		else:
 			print("Syarat belum ok f(%d)*f(%d) >= 0 || %5.2f >= 0"%(x1,x2,check))
 
