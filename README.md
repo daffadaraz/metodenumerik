@@ -7,7 +7,7 @@ Metode Numerik yang saya dapatkan dari kuliah saya.
 4. ...
 
 # Requirement
-
+Python 3
 ```bash
 pip3 install sympy
 ```
