@@ -51,15 +51,4 @@ if __name__ == '__main__':
         	clear()
         else:
             exit()
-
-#--------------------------------------------------------------------------------------------------#
-#Langkah-langkah metode Newton Raphson
-#1. Ambil satu titik sembarang   x1
-#2. Tentukan f '(x)
-#3. Hitunglah nilai  f(x1)  dan  f '(x1)
-#4. Tentukan nilai   x2   =   x1  -   f(x1) / f '(x1)
-#5. Hitunglah nilai  f(x2) .
-#Bila nilai f(x2) mendekati 0 , x2 adalah akar persamaan , selesai.
-#Bila tidak
-#6. Tentukan   x1  =  x2   ( nilai  x1 digantikan  x2 )
-#7. Kembali ke langkah 3.
+            
