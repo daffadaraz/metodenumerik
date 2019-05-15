@@ -22,13 +22,6 @@ pip3 install sympy
 6. Masukkan Nilai awal
 7. Dan pada setiap iterasi perkalian 10 tekan enter untuk melanjutkan iterasi
 
-## Note
-Menggunakan Python 3.7 dan Ubuntu (Sudah di test di windows juga)
-
-Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban yang sesuai dengan taraf error
-
-Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun harus membawa myfunc.py)
-
 # Metode yang digunakan
 ## Metode Bisection
 1. Ambil dua titik sembarang x1  dan  x2
@@ -86,3 +79,12 @@ Bila tidak
 
 6. Tentukan   x1  =  x2   ( nilai  x1 digantikan  x2 )
 7. Kembali ke langkah 3.
+
+# Note
+Menggunakan Python 3.7 dan Ubuntu (Sudah di test di windows juga)
+
+Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban yang sesuai dengan taraf error
+
+Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun harus membawa myfunc.py)
+
+Apabila terdapat kesalahan atau ingin memperbaiki code saya dapat menghubungu saya melalui daffa.daraz@protonmail.com
