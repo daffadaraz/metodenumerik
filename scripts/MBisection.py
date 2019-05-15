@@ -10,12 +10,11 @@ def hitung(persp):
     p = persamaan(persp)
 
     clear ()
-
     #pil[0] berisi pilihan metode pil[1] berisi string metode
     print("Metode Numerik")
     print("Persamaan, %s"%(persp))
     print()
-    print("(Berapa angka dibelakang koma. Masukkan 16 jika tidak yakin)")
+    print("(Berapa angka dibelakang koma. Masukkan 2 jika tidak yakin)")
     rou = int(input("Pembulatan : "))
     err = float(input("Masukkan Error : "))
 

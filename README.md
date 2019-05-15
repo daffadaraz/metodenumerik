@@ -12,10 +12,22 @@ Metode Numerik yang saya dapatkan dari kuliah saya.
 pip3 install sympy
 ```
 
+# Cara Menggunakan
+
+1. Clone Git ini (Download sebagai zip)
+2. Jalankan Main.py
+3. Masukkan persamaan
+4. Pilih Metode
+5. Tentukan Pembulatan yang di inginkan (biasanya 2 atau jika mau akurat 16)
+6. Masukkan Nilai awal
+7. Dan pada setiap iterasi perkalian 10 tekan enter untuk melanjutkan iterasi
+
 # Note
 Menggunakan Python 3.7 dan Ubuntu (Sudah di test di windows juga)
 
 Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban yang sesuai dengan taraf error
+
+Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun harus membawa myfunc.py)
 
 # Metode yang digunakan
 ## Metode Bisection yang digunakan

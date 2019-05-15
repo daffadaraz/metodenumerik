@@ -9,7 +9,6 @@ def hitung(persp):
     n = 1
     p = persamaana(persp)
     #2. Tentukan f '(x)
-
     trn = turunan(p)
 
     clear()
@@ -17,7 +16,7 @@ def hitung(persp):
     print("Persamaan, %s"%(persp))
     print()
     print()
-    print("(Jika tidak yakin, masukkan 2)")
+    print("(Berapa angka dibelakang koma. Masukkan 2 jika tidak yakin)")
     rou = int(input("Masukkan Pembulatan : "))
     err = float(input("Masukkan Error : "))
 
