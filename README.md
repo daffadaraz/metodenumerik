@@ -18,11 +18,11 @@ pip3 install sympy
 2. Jalankan Main.py
 3. Masukkan persamaan
 4. Pilih Metode
-5. Tentukan Pembulatan yang di inginkan (biasanya 2 atau jika mau akurat 16)
+5. Tentukan Pembulatan yang di inginkan (biasanya 2 atau jika mau akurat >=16)
 6. Masukkan Nilai awal
 7. Dan pada setiap iterasi perkalian 10 tekan enter untuk melanjutkan iterasi
 
-# Note
+## Note
 Menggunakan Python 3.7 dan Ubuntu (Sudah di test di windows juga)
 
 Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban yang sesuai dengan taraf error
@@ -30,7 +30,7 @@ Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban 
 Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun harus membawa myfunc.py)
 
 # Metode yang digunakan
-## Metode Bisection yang digunakan
+## Metode Bisection
 1. Ambil dua titik sembarang x1  dan  x2
 2. Hitung nilai  f(x1)  dan  f(x2)
 2. Tentukan hasil kali tanda bilangan f(x1).f(x2).
@@ -50,7 +50,7 @@ Bila tanda bilangan   f(x1).f(x3)  <  0  maka  x2 =  x3  ( nilai x2 menjadi  x3 
 
 7. Kembali ke langkah 4.
 
-## Metode Regula Falsi yang digunakan
+## Metode Regula Falsi
 1. Ambil dua titik sembarang x1 dan x2
 2. Hitung nilai f(x1)  dan  f(x2)
 3. Tentukan hasil kali tanda bilangan  f(x1) . f(x2)
