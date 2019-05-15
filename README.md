@@ -6,6 +6,12 @@ Metode Numerik yang saya dapatkan dari kuliah saya.
 3. Newton Raphson
 4. ...
 
+# Requirement
+
+```bash
+pip3 install sympy
+```
+
 # Note
 Menggunakan Python 3.7 dan Ubuntu (Sudah di test di windows juga)
 
