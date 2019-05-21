@@ -17,6 +17,7 @@ def hitung(persp):
     print()
     print("(Berapa angka dibelakang koma. Masukkan 2 jika tidak yakin)")
     rou = int(input("Pembulatan : "))
+    print("(Ingin mendekati nilai berapa. Masukkan 0 jika tidak yakin)")
     err = float(input("Masukkan Error : "))
 
     while True:

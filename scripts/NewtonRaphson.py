@@ -18,6 +18,7 @@ def hitung(persp):
     print()
     print("(Berapa angka dibelakang koma. Masukkan 2 jika tidak yakin)")
     rou = int(input("Masukkan Pembulatan : "))
+    print("(Ingin mendekati nilai berapa. Masukkan 0 jika tidak yakin)")
     err = float(input("Masukkan Error : "))
 
     #1. Ambil satu titik sembarang   x1
@@ -25,7 +26,7 @@ def hitung(persp):
     x1 = float(input("Masukkan X1 : "))
 
     #3. Hitunglah nilai  f(x1)  dan  f '(x1)
-    
+
     fx1 = f(x1,p)
     ftx1 = f(x1,trn)
 
@@ -54,7 +55,7 @@ def hitung(persp):
         print("%3d|     %.8f       %10.8f          %.8f          %.8f" % (n,fx1,ftx1,x2,fx2))
 
         #Bila nilai f(x2) mendekati 0 , x2 adalah akar persamaan , selesai.
-        if fx2 == err or x2 == cektemp or n == 100:
+        if fx2 == err or fx2 == cektemp or n == 10:
             print("________________")
             print("Akar Persamaan, %.36f"%(x2))
             print("Atau ~ %.4f"%(round(x2,4)))
@@ -70,10 +71,10 @@ def hitung(persp):
             x1 = x2
             fx1 = f(x1,p)
             ftx1 = f(x1,trn)
-        
-        cektemp = x2
+
+        cektemp = fx2
         n = n + 1
-        
+
         #7. Kembali ke langkah 3.
 
         if n%10 == 0:

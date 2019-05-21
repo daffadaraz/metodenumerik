@@ -25,7 +25,7 @@ def persamaan(pers):
 		pers = pers.replace("x^%d"%(n),"pow(x,%d)"%(n))
 	return pers
 
-def persamaana(pers):
+def persamaana(pers): #Alternative
     n = 1
     while((pers.find("^")) == 1):
         n = n + 1
@@ -38,6 +38,5 @@ def persamaana(pers):
 #--------------------------------------------------------------------------------------------------#
 def turunan(pers):
     x= Symbol('x')
-    function = pers
-    deriv= Derivative(function, x)
+    deriv= Derivative(pers, x)
     return str(deriv.doit())
