@@ -1,11 +1,12 @@
-import os, random
+import os, random, sys
 import scripts
-from scripts import clear 
+from scripts import clear,error
 
 #--------------------------------------------------------------------------------------------------#
 #Main Menu dan Pemanggilan fungsi fungsi
 #--------------------------------------------------------------------------------------------------#
 def method(p):
+    print("Persamaan, %s"%(pers))
     pil = 4
     print("Metode yang ingin di gunakan?")
     print("1. Metode Bisection")
@@ -29,10 +30,25 @@ def method(p):
 # Input persamaan dan perulangan.
 #--------------------------------------------------------------------------------------------------#
 if __name__ == '__main__':
-    clear()
-    #Initialisasi Variable
+    #Inisialisasi Variable
     pil2 = 'y'
-    pil3 = 'n'
+
+    if( (len(sys.argv)>2)): #Error Usage
+        error()
+        exit()
+
+    elif(len(sys.argv)==2): #jika Menggnuakan Argument
+        pil3 = 'y'
+        pers = str(sys.argv[1])
+        if((sys.argv[1].find('x')) == -1):
+            error()
+            print('\nNo Variable or using other than x')
+            exit()
+
+    else:
+        pil3 = 'n'
+
+    clear()
     while(pil2 == 'y' or pil2 == 'Y'):
         if (pil3 == 'n' or pil3 == 'N'):
             print("ex. x^3 + 2*x^2 - 4*x - 4")

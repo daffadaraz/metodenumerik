@@ -9,6 +9,12 @@ def clear():
     else:
         os.system('clear')
 
+# Error Message
+def error():
+    print('Usage : Main.py')
+    print('        Main.py <"Persamaan"> ')
+    print('ex.     Main.py "x^3 + 2*x^2 - 4*x - 4"')
+
 #--------------------------------------------------------------------------------------------------#
 #Menghitung Persamaan
 #--------------------------------------------------------------------------------------------------#
