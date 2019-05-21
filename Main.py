@@ -1,8 +1,6 @@
 import os, random
-from scripts.myfunc import clear
-import scripts.MBisection as MB
-import scripts.RegulaFalsi as RF
-import scripts.NewtonRaphson as NR
+import scripts
+from scripts import clear 
 
 #--------------------------------------------------------------------------------------------------#
 #Main Menu dan Pemanggilan fungsi fungsi
@@ -16,11 +14,11 @@ def method(p):
     pil = int(input("Masukkan Pilihan : "))
 
     if(pil == 1):
-        MB.hitung(pers)
+        scripts.MB(pers)
     elif(pil == 2):
-        RF.hitung(pers)
+        scripts.RF(pers)
     elif(pil == 3):
-        NR.hitung(pers)
+        scripts.NR(pers)
     else:
         print("Wrong Input.")
         exit()
