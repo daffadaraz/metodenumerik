@@ -53,6 +53,7 @@ if __name__ == '__main__':
         if (pil3 == 'n' or pil3 == 'N'):
             print("ex. x^3 + 2*x^2 - 4*x - 4")
             pers = str(input("Masukkan Persamaan : "))
+            pers = pers.lower()
         print()
 
         #Pemilihan Metode Numerik
