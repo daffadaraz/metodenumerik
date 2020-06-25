@@ -89,7 +89,7 @@ Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun h
 
 Apabila terdapat kesalahan atau ingin memperbaiki code saya dapat menghubungu saya melalui daffa.daraz@protonmail.com
 
-Jika Program ini membantu anda dapat mendonasi kepada saya dalam bentuk terimakasih
+Jika Program ini membantu, anda dapat mendonasi kepada saya dalam bentuk terimakasih
  
  Daffa Daraz Aslam
  - BTN - 0033301610005946
