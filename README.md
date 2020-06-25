@@ -88,3 +88,12 @@ Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban 
 Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun harus membawa myfunc.py)
 
 Apabila terdapat kesalahan atau ingin memperbaiki code saya dapat menghubungu saya melalui daffa.daraz@protonmail.com
+
+Jika Program ini membantu anda dapat mendonasi kepada saya dalam bentuk terimakasih
+ 
+ Daffa Daraz Aslam
+ - BTN - 0033301610005946
+ - DANA / OVO - 081293887668
+ - BCA - 7810572281
+ - $daffadaraz - Jenius
+ - [Paypal.me](https://paypal.me/daffadaraz?)
