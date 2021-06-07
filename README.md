@@ -88,3 +88,5 @@ Saat Melakukan perhitungan pastikan gunakan pembulatan agar mendapatkan jawaban 
 Kalian juga dapat menggunakan script masing masing metode tanpa Main.py (Namun harus membawa myfunc.py)
 
 Apabila terdapat kesalahan atau ingin memperbaiki code saya dapat menghubungu saya melalui daffa.daraz@protonmail.com
+
+(Ini code berantakan banget, saya bikin-nya sekalian belajar Python soalnya.)
